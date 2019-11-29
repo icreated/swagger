@@ -15,7 +15,6 @@ It points to following **openapi.xml**:
 [http://localhost:8080/services/api-docs/openapi.xml](http://localhost:8080/services/api-docs/openapi.xml)
 
 
-
 ## Installing / Getting started
 
 To build this plugin you need to get sources in your project directory:
@@ -43,6 +42,10 @@ Build it with Maven:
 ```shell
 mvn install
 ```
+
+Deploy plugin to Idempiere OSGI and navigate to Swagger URL:
+
+[http://localhost:8080/swagger/app/](http://localhost:8080/swagger/app/)
 
 ## Contributing
 
