@@ -22,14 +22,6 @@ To build this plugin you need to get sources in your project directory:
 ```shell
 git clone https://github.com/icreated/webstore-api.git
 ```
-**Important!**
-Edit pom.xml to link native Idempiere libraries with parent project.
-If you put sources directly in Idempiere sources folder, it will be
-
-```xml
-<relativePath>../org.idempiere.parent/pom.xml</relativePath>
-```
-otherwise modify it.
 
 If used with others API plugins, modify path in pom.xml:
 
