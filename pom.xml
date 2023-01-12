@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <artifactId>org.icreated.swagger</artifactId>
+   <artifactId>co.icreated.openapi</artifactId>
    <properties>
       <replacer.version>1.5.3</replacer.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <swagger-ui.version>3.22.2</swagger-ui.version>
-      <openapi-value>http://localhost:8080/services/api-docs/openapi.xml</openapi-value>
-      <!--
-      	<openapi-value>https://preprod.aidodys.com:8443/services/api-docs/openapi.xml</openapi-value>
-        -->
+      <swagger-ui.version>4.15.5</swagger-ui.version>
+      <openapi-value>http://localhost:8080/portal/openapi.yaml</openapi-value>
    </properties>
    <parent>
 	    <groupId>org.idempiere</groupId>
 		<artifactId>org.idempiere.parent</artifactId>
 		<version>${revision}</version>
 		<relativePath>../idempiere/org.idempiere.parent/pom.xml</relativePath>
-		<!--ICreated: Standard Idempiere Parent pom.xml path
-		<relativePath>../org.idempiere.parent/pom.xml</relativePath>
-		 -->
    </parent>
    <packaging>eclipse-plugin</packaging>
    <build>
@@ -59,7 +53,7 @@
                </execution>
             </executions>
             <configuration>
-               <file>${project.build.directory}/swagger-ui/META-INF/resources/webjars/swagger-ui/${swagger-ui.version}/index.html</file>
+               <file>${project.build.directory}/swagger-ui/META-INF/resources/webjars/swagger-ui/${swagger-ui.version}/swagger-initializer.js</file>
                <replacements>
                   <replacement>
                      <token>https://petstore.swagger.io/v2/swagger.json</token>

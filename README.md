@@ -1,18 +1,26 @@
 # &int; created
 > Integration created
 
-# Idempiere Swagger
+# Idempiere OpenAPI
 > 
 
-This is simple Swagger implementation (version 3.22.2) for Idempiere OSGI platform.
+This is simple OpenApi implementation (version 3.22.2) for Idempiere OSGI platform.
 
-This Swagger application was created to work together with Idempiere WebStore API
+This OpenApi application was created to work together with Idempiere WebStore / Portal API
 
 [https://github.com/icreated/webstore-api](https://github.com/icreated/webstore-api)
 
-It points to following **openapi.xml**:
+[https://github.com/icreated/portal-api](https://github.com/icreated/portal-api)
+
+It should point to following **openapi.xml** for WebStore:
 
 [http://localhost:8080/services/api-docs/openapi.xml](http://localhost:8080/services/api-docs/openapi.xml)
+
+or 
+
+[http://localhost:8080/portal/openapi.yaml](http://localhost:8080/portal/openapi.yaml)
+
+for Portal API
 
 
 ## Installing / Getting started
@@ -35,9 +43,9 @@ Build it with Maven:
 mvn install
 ```
 
-Deploy plugin to Idempiere OSGI and navigate to Swagger URL:
+Deploy plugin to Idempiere OSGI and navigate to OpenAPI URL:
 
-[http://localhost:8080/swagger/app/](http://localhost:8080/swagger/app/)
+[http://localhost:8080/openapi/app/](http://localhost:8080/openapi/app/)
 
 ## Contributing
 

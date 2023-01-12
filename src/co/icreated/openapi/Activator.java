@@ -1,4 +1,4 @@
-package org.icreated.swagger;
+package co.icreated.openapi;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

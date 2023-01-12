@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='org.icreated.swagger' version='6.2.0.201911041709' generation='2'>
-    <update id='org.icreated.swagger' range='[0.0.0,6.2.0.201911041709)' severity='0'/>
-    <properties size='5'>
-      <property name='org.eclipse.equinox.p2.name' value='Swagger'/>
+  <unit id='co.icreated.openapi' version='9.0.0.202301122201' generation='2'>
+    <update id='co.icreated.openapi' range='[0.0.0,9.0.0.202301122201)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='OpenAPI'/>
       <property name='org.eclipse.equinox.p2.provider' value='ICreated'/>
       <property name='maven-groupId' value='org.idempiere'/>
-      <property name='maven-artifactId' value='org.icreated.swagger'/>
-      <property name='maven-version' value='6.2.0-SNAPSHOT'/>
+      <property name='maven-artifactId' value='co.icreated.openapi'/>
+      <property name='maven-version' value='9.0.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
     </properties>
     <provides size='4'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.icreated.swagger' version='6.2.0.201911041709'/>
-      <provided namespace='osgi.bundle' name='org.icreated.swagger' version='6.2.0.201911041709'/>
-      <provided namespace='osgi.identity' name='org.icreated.swagger' version='6.2.0.201911041709'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='co.icreated.openapi' version='9.0.0.202301122201'/>
+      <provided namespace='osgi.bundle' name='co.icreated.openapi' version='9.0.0.202301122201'/>
+      <provided namespace='osgi.identity' name='co.icreated.openapi' version='9.0.0.202301122201'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -28,37 +29,42 @@
       <required namespace='java.package' name='org.eclipse.equinox.servletbridge' range='1.1.0'/>
       <required namespace='java.package' name='org.osgi.framework' range='1.6.0'/>
       <required namespace='java.package' name='org.osgi.service.http' range='1.2.1'/>
-      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version&gt;=1.11))'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version&gt;=1.11))'>
+        <description>
+          co.icreated.openapi
+        </description>
+      </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.icreated.swagger' version='6.2.0.201911041709'/>
+      <artifact classifier='osgi.bundle' id='co.icreated.openapi' version='9.0.0.202301122201'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.icreated.swagger;singleton:=true&#xA;Bundle-Version: 6.2.0.201911041709&#xA;
+          Bundle-SymbolicName: co.icreated.openapi;singleton:=true&#xA;Bundle-Version: 9.0.0.202301122201&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.icreated.swagger.source' version='6.2.0.201911041709' singleton='false'>
-    <update id='org.icreated.swagger.source' range='[0.0.0,6.2.0.201911041709)' severity='0'/>
-    <properties size='9'>
+  <unit id='co.icreated.openapi.source' version='9.0.0.202301122201' singleton='false'>
+    <update id='co.icreated.openapi.source' range='[0.0.0,9.0.0.202301122201)' severity='0'/>
+    <properties size='10'>
       <property name='df_LT.bundleVendor' value='ICreated'/>
-      <property name='df_LT.bundleName' value='Swagger Source'/>
+      <property name='df_LT.bundleName' value='OpenAPI Source'/>
       <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
       <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
       <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
       <property name='maven-groupId' value='org.idempiere'/>
-      <property name='maven-artifactId' value='org.icreated.swagger'/>
-      <property name='maven-version' value='6.2.0-SNAPSHOT'/>
+      <property name='maven-artifactId' value='co.icreated.openapi'/>
+      <property name='maven-version' value='9.0.0-SNAPSHOT'/>
       <property name='maven-classifier' value='sources'/>
+      <property name='maven-type' value='java-source'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.icreated.swagger.source' version='6.2.0.201911041709'/>
-      <provided namespace='osgi.bundle' name='org.icreated.swagger.source' version='6.2.0.201911041709'/>
-      <provided namespace='osgi.identity' name='org.icreated.swagger.source' version='6.2.0.201911041709'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='co.icreated.openapi.source' version='9.0.0.202301122201'/>
+      <provided namespace='osgi.bundle' name='co.icreated.openapi.source' version='9.0.0.202301122201'/>
+      <provided namespace='osgi.identity' name='co.icreated.openapi.source' version='9.0.0.202301122201'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -67,13 +73,13 @@
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.icreated.swagger.source' version='6.2.0.201911041709'/>
+      <artifact classifier='osgi.bundle' id='co.icreated.openapi.source' version='9.0.0.202301122201'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.icreated.swagger.source&#xA;Bundle-Version: 6.2.0.201911041709&#xA;
+          Bundle-SymbolicName: co.icreated.openapi.source&#xA;Bundle-Version: 9.0.0.202301122201&#xA;
         </instruction>
       </instructions>
     </touchpointData>
