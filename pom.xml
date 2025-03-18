@@ -6,7 +6,8 @@
       <replacer.version>1.5.3</replacer.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <swagger-ui.version>4.15.5</swagger-ui.version>
-      <openapi-value>http://localhost:8080/portal/openapi.yaml</openapi-value>
+      <!--<openapi-value>http://localhost:8080/portal/openapi.yaml</openapi-value>-->
+      <openapi-value>http://localhost:8080/services/openapi.yaml</openapi-value>
    </properties>
    <parent>
 	    <groupId>org.idempiere</groupId>

@@ -2,14 +2,14 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenAPI
 Bundle-SymbolicName: co.icreated.openapi;singleton:=true
-Bundle-Version: 9.0.0.qualifier
+Bundle-Version: 11.0.0.qualifier
 Bundle-Vendor: ICreated
 DynamicImport-Package: *
 Bundle-ActivationPolicy: lazy
 Comment: Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=1.11))"
 Automatic-Module-Name: co.icreated.openapi
-Import-Package: org.apache.felix.webconsole;version="3.1.2",
+Import-Package: 
  org.compiere.model,
  org.compiere.util,
  org.eclipse.equinox.http.registry;version="1.0.0",

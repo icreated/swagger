@@ -2,18 +2,17 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenAPI
 Bundle-SymbolicName: co.icreated.openapi;singleton:=true
-Bundle-Version: 9.0.0.202301122201
+Bundle-Version: 11.0.0.202503182110
 Bundle-Vendor: ICreated
 DynamicImport-Package: *
 Bundle-ActivationPolicy: lazy
 Comment: Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=1.11))"
 Automatic-Module-Name: co.icreated.openapi
-Import-Package: org.apache.felix.webconsole;version="3.1.2",org.compiere
- .model,org.compiere.util,org.eclipse.equinox.http.registry;version="1.0
- .0",org.eclipse.equinox.http.servlet;version="1.1.0",org.eclipse.equino
- x.servletbridge;version="1.1.0",org.osgi.framework;version="1.6.0",org.
- osgi.service.http;version="1.2.1"
+Import-Package: org.compiere.model,org.compiere.util,org.eclipse.equinox
+ .http.registry;version="1.0.0",org.eclipse.equinox.http.servlet;version
+ ="1.1.0",org.eclipse.equinox.servletbridge;version="1.1.0",org.osgi.fra
+ mework;version="1.6.0",org.osgi.service.http;version="1.2.1"
 Web-ContextPath: openapi
 Bundle-Activator: co.icreated.openapi.Activator
 
