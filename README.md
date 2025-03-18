@@ -14,7 +14,7 @@ This OpenApi application was created to work together with Idempiere WebStore / 
 
 It should point to following **openapi.xml** for WebStore:
 
-[http://localhost:8080/services/api-docs/openapi.xml](http://localhost:8080/services/api-docs/openapi.xml)
+[http://localhost:8080/services/openapi.yaml](http://localhost:8080/services/openapi.yaml)
 
 or 
 
@@ -33,8 +33,8 @@ git clone https://github.com/icreated/webstore-api.git
 
 If used with others API plugins, modify path in pom.xml:
 
-```xml
-<openapi-value>http://localhost:8080/services/api-docs/openapi.xml</openapi-value>
+```yml
+<openapi-value>http://localhost:8080/services/openapi.yaml</openapi-value>
 ```
 
 Build it with Maven:

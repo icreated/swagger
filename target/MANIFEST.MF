@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenAPI
 Bundle-SymbolicName: co.icreated.openapi;singleton:=true
-Bundle-Version: 11.0.0.202503182110
+Bundle-Version: 11.0.0.202503182115
 Bundle-Vendor: ICreated
 DynamicImport-Package: *
 Bundle-ActivationPolicy: lazy
